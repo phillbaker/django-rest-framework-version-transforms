@@ -8,11 +8,13 @@ class TestSerializer(BaseVersioningSerializer):
 
     class Meta:
         model = TestModel
+        fields = '__all__'
 
 
 class MatchingModelSerializer(ModelSerializer):
     class Meta:
         model = TestModel
+        fields = '__all__'
 
 
 class TestSerializerV3(BaseVersioningSerializer):
